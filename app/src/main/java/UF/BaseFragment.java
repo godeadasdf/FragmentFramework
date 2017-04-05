@@ -25,7 +25,8 @@ public class BaseFragment extends Fragment {
     protected <T extends BaseFragment> boolean removeFragmetFromStack(Class<T> clazz) {
         FragmentManager fm = getFragmentManager();
         FragmentTransaction transaction = fm.beginTransaction();
-        transaction.remove()
+       // transaction.remove()
+        return false;
     }
 
 }
